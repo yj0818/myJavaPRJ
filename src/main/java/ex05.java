@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex04 {
+public class ex05 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int a;
@@ -8,11 +8,15 @@ public class ex04 {
 
 
         for(int i = 1; i<=a; i++){
-            for(int j = i; a-j >0; j++)
-                System.out.printf(" ");
-            for (int z = 0; z < i; z++)
+            for (int j = a; j>0; j--) {
+                if(i<j){
+                    System.out.printf("-");
+                }else {
                     System.out.printf("*");
-                    System.out.println();
+                }
+            }
+            System.out.println();
         }
     }
 }
+
